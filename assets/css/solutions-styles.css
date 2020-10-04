@@ -1,0 +1,15 @@
+.s-parallax {
+    min-height: 400px;
+    background: linear-gradient(#9a77cf52, #593d82b3), url(../img/tengyart-_VkwiVNCNfo-unsplash.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+.content video {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}

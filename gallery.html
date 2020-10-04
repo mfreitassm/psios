@@ -1,0 +1,245 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psios</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Tienne:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----Icofont-->
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="site_wrap pg-gallery">
+        <header id="header">
+            <!-- Navigation -->
+            <div class="navbar" id="navbar">
+                <img src="assets/img/logo-simbolo2.svg" class="logo"
+                    alt="logo" />
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li id="btnservice"><a class=""
+                            href="services.html">Soluções</a>
+                        <div class="dropdown-content">
+                            <a href="psicoterapia.html" id="defaultOpen"
+                                class="tablink active">Psicoterapia</a>
+                            <a href="manejoansiedade.html"
+                                class="tablink">Manejo de
+                                Ansiedade</a>
+                            <a href="jornadadasemocoes.html"
+                                class="tablink">Jornada das
+                                Emoções</a>
+                            <a href="oficinaemocoes.html"
+                                class="tablink">Oficina das
+                                Emoções</a>
+                            <a href="tomeseuespaco.html" class="tablink">Tome
+                                seu
+                                Espaço</a>
+                            <a href="palestras.html" class="tablink">Apoio
+                                <i>in Company</i></a>
+                        </div>
+                    </li>
+                    <!--<li><a href="project.html">Projetos</a></li>-->
+                    <li><a class="active" href="gallery.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><button type="button" class="btn btn-primary">Agende um
+                            Atendimento</button></li>
+                </ul>
+            </div>
+            <div class="hero">
+                <div class="hero-text">
+                    <!--<h1>Sobre nós</h1>
+                    <p>Apoio para tornar sua vida mais leve e em paz com sua
+                        emoções.</p>
+                     <button>Agende já uma consulta</button>-->
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="gallery" class="gallery">
+                <div class="gallery-container">
+                    <h2 class="title-content">Galeria</h2>
+                    <div class="gallery-nav">
+                        <div class="justify">
+                            <ul id="filter" class="d-flex gallery-filters">
+                                <li class="btn active"
+                                    onclick="filterSelection('all')">Todas
+                                </li>
+                                <li class="btn"
+                                    onclick="filterSelection('filter-principal')">
+                                    Principal
+                                </li>
+                                <li class="btn"
+                                    onclick="filterSelection('filter-consultorio')">
+                                    Nosso
+                                    Espaço</li>
+                                <li class="btn"
+                                    onclick="filterSelection('filter-palestra')">
+                                    Palestras
+                                </li>
+                                <li class="btn"
+                                    onclick="filterSelection('filter-projeto')">
+                                    Projetos</li>
+                                <li class="btn"
+                                    onclick="filterSelection('filter-psicopedagogico')">
+                                    Psicopedagógico</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="gallery-row">
+
+                        <div class="gallery-item filter-principal">
+                            <img src="assets/img/portfolio/thumb-21.jpg"
+                                class="img-fluid" alt="">
+                            <div class="gallery-info">
+                                <h4>RELAÇÃO TERAPÊUTICA</h4>
+                                <p>Pessoas em primeiro lugar: acolher ouvir e
+                                    não prejulgar, dada a importância do
+                                    estabelecimento
+                                    para o processo terapêutico.</p>
+                                <a target="_blank"
+                                    href="assets/img/portfolio/thumb-21.jpg"
+                                    title="Relação Terapêutica"><i
+                                        class="icofont-plus"></i></a>
+                                <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+                            </div>
+                        </div>
+
+                        <div class="gallery-item filter-principal">
+                            <img src="assets/img/portfolio/thumb-29.jpg"
+                                class="img-fluid" alt="">
+                            <div class="gallery-info">
+                                <h4>SIGILO ÉTICO</h4>
+                                <p>Compromisso e respeito na preservação das
+                                    informações que são trabalhadas como regra
+                                    fundamental.</p>
+                                <a target="_blank"
+                                    href="assets/img/portfolio/thumb-29.jpg"
+                                    title="Sigilo Ético"><i
+                                        class="icofont-plus"></i></a>
+                                <!-- <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+                            </div>
+                        </div>
+
+                        <div class="gallery-item filter-principal">
+                            <img src="assets/img/portfolio/maos_4x4.jpg"
+                                class="img-fluid" alt="crianca">
+                            <div class="gallery-info">
+                                <h4>PSICOLOGIA EDUCACIONAL</h4>
+                                <p>Orientação escolar, apoio psicopedagógico
+                                    para o favorecimento da aprendizagem
+                                    significativa.</p>
+                                <a target="_blank"
+                                    href="assets/img/portfolio/maos_4x4.jpg"
+                                    title="Psicologia educacional"><i
+                                        class="icofont-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item filter-principal">
+                            <img src="assets/img/portfolio/thumb-22.jpg"
+                                class="img-fluid" alt="">
+                            <div class="gallery-info">
+                                <h4>O OLHAR DA EQUIPE</h4>
+                                <p>Estamos convencidos de que o desenvolvimento
+                                    das atividades com diferentes contribuições
+                                    regidos sob os padrões éticos e
+                                    profissionais no cotidiano são
+                                    enriquecedores e favorece para a obtenção de
+                                    melhores resultados.</p>
+                                <a target="_blank"
+                                    href="assets/img/portfolio/thumb-22.jpg"
+                                    title="Olhar da Equipe"><i
+                                        class="bx bx-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item filter-psicopedagogico">
+                            <img src="assets/img/portfolio/thumb-14.jpg"
+                                class="img-fluid" alt="">
+                            <div class="gallery-info">
+                                <h4>Web 2</h4>
+                                <p>Web</p>
+                                <a target="_blank"
+                                    href="assets/img/portfolio/portfolio-5.jpg"
+                                    title=""><i class="icofont-plus"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item filter-projeto">
+                            <img src="assets/img/portfolio/thumb-13.jpg"
+                                class="img-fluid" alt="">
+                            <div class="gallery-info">
+                                <h4>App 3</h4>
+                                <p>App</p>
+                                <a target="_blank"
+                                    href="assets/img/portfolio/portfolio-6.jpg"
+                                    title="App 3"><i class="icofont-plus"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section><!-- End Portfolio Section -->
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <!-- <h3>PSIOS</h3>-->
+                    <a href="index.html"><img src="assets/img/logo-capa2.svg"
+                            class="logo" alt="logo-Psios"></a>
+                    <p><strong>Endereço:</strong><br>
+                        Av. Tancredo Neves, 2421<br />
+                        Caminho das Árvores, sala 208<br />
+                        Salvador - BA - Brasil, 41820-560 <br /><br />
+                        <strong>Fone:</strong> +55 71 98383 1666<br />
+                        <strong>Email:</strong> inpsios@gmail.com<br />
+                    </p>
+                </div>
+                <div class="footer-blog"></div>
+                <div class="footer-social">
+                    <a href="#"><i class="icofont-facebook"></i></a>
+                    <a href="#"><i class="icofont-instagram"></i></a>
+                    <a href="#"><i class="icofont-twitter"></i></a>
+                    <a href="#"><i class="icofont-youtube"></i></a>
+                    <a href="#"><i class="icofont-brand-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright cl-white">
+                    © Copyright <strong><span
+                            class="cl-lightorange">Psios</span></strong>. All
+                    Rights
+                    Reserved
+                </div>
+                <div class="credits cl-white">
+                    Designed by<a class="cl-lightorange"
+                        href="https://m&m.com/">M&M</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/caroussel.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
