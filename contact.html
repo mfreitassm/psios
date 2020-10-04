@@ -1,0 +1,236 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psios</title>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!--Fonts-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Tienne:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!----Icofont-->
+    <link rel="stylesheet" href="assets/icofont/icofont.min.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="assets/js/script.js"></script>
+</head>
+
+<body>
+    <div class="site_wrap pg-contact">
+        <header id="header">
+            <!-- Navigation -->
+            <div class="navbar" id="navbar">
+                <img src="assets/img/logo-simbolo2.svg" class="logo"
+                    alt="logo" />
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">Sobre</a></li>
+                    <li id="btnservice"><a class=""
+                            href="services.html">Soluções</a>
+                        <div class="dropdown-content">
+                            <a href="psicoterapia.html" id="defaultOpen"
+                                class="tablink">Psicoterapia</a>
+                            <a href="manejoansiedade.html"
+                                class="tablink">Manejo de
+                                Ansiedade</a>
+                            <a href="jornadadasemocoes.html"
+                                class="tablink">Jornada das
+                                Emoções</a>
+                            <a href="oficinaemocoes.html"
+                                class="tablink">Oficina das
+                                Emoções</a>
+                            <a href="tomeseuespaco.html" class="tablink">Tome
+                                seu
+                                Espaço</a>
+                            <a href="palestras.html" class="tablink">Apoio
+                                <i>in Company</i></a>
+                        </div>
+                    </li>
+                    <!--<li><a href="project.html">Projetos</a></li>-->
+                    <li><a href="gallery.html">Galeria</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a class="active" href="contact.html">Contato</a></li>
+                    <li><button type="button" class="btn btn-primary">Agende um
+                            Atendimento</button></li>
+                </ul>
+            </div>
+            <div class="hero">
+                <div class="hero-text">
+                    <!--<h1>Sobre nós</h1>
+                    <p>Apoio para tornar sua vida mais leve e em paz com sua
+                        emoções.</p>
+                     <button>Agende já uma consulta</button>-->
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="contact" class="contact webkit-center">
+                <div class="contact-container">
+                    <h2 class="title-content">Contato</h2>
+
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15551.519701201878!2d-38.4514393!3d-12.979531!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x55ed099dd13462bb!2sCentro%20Empresarial%20Reden%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1574006132802!5m2!1spt-BR!2sbr"
+                            frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <div class="contact-details">
+                        <div class="contact-details-info">
+                            <div class="info">
+                                <div class="address">
+                                    <i class="icofont-google-map"></i>
+                                    <h4>Endereço:</h4>
+                                    <p>Av. Tancredo Neves, 2421 - Caminho das
+                                        Árvores, sala 208<br>
+                                        Salvador - BA - Brasil, 41820-560</p>
+                                </div>
+
+                                <div class="email">
+                                    <i class="icofont-envelope"></i>
+                                    <h4>Email:</h4>
+                                    <p><a class="cl-black"
+                                            href="mailto:inpsios@gmail.com">inpsios@gmail.com</a>
+                                    </p>
+                                </div>
+
+                                <div class="phone">
+                                    <i class="icofont-phone"></i>
+                                    <h4>Fone:</h4>
+                                    <p>55 71 98383 1666<br>
+                                        55 71 98608 9314<br>
+                                    </p>
+                                </div>
+                                <div class="phone">
+                                    <i class="icofont-brand-whatsapp"></i>
+                                    <h4>WhatsApp:</h4>
+                                    <p>55 71 98701 4429<br>
+                                        55 71 99911 6945<br>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div id="form" class="contact-details-form">
+                            <h4>Deixe sua mensagem</h4>
+                            <form action="forms/contact.php" method="post"
+                                role="form" class="php-email-form">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="text" name="name"
+                                            class="form-control" id="name"
+                                            placeholder="Nome"
+                                            data-rule="minlen:4"
+                                            data-msg="Por favor preencher com pelo menos 4 letras"
+                                            required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control"
+                                            name="phone" id="phone"
+                                            placeholder="00000-0000"
+                                            pattern="[0-9]{5}-[0-9]{4}"
+                                            data-rule="phone"
+                                            data-msg="Por favor preencher com um telefone válido"
+                                            required />
+                                        <div class="validate"></div>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control"
+                                            name="email" id="email"
+                                            placeholder="Email"
+                                            data-rule="email"
+                                            data-msg="Por favor preencher com um email válido"
+                                            required />
+                                        <div class="validate"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control"
+                                            name="subject" id="subject"
+                                            placeholder="Assunto"
+                                            data-rule="minlen:4"
+                                            data-msg="Texto mínimo de 8 letras" />
+                                        <div class="validate"></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control"
+                                        name="message" rows="5"
+                                        data-rule="required"
+                                        data-msg="Por favor deixe sua mensagem"
+                                        placeholder="Mensagem"></textarea>
+                                    <div class="validate"></div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="loading">Carregando</div>
+                                    <div class="error-message"></div>
+                                    <div class="sent-message">Sua Mensagem Foi
+                                        Enviada. Obrigado!</div>
+                                </div>
+                                <div><button class="center btn-primary"
+                                        type="submit">Enviar
+                                        Mensagem</button>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </section><!-- End Contact Section -->
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <!-- <h3>PSIOS</h3>-->
+                    <a href="index.html"><img src="assets/img/logo-capa2.svg"
+                            class="logo" alt="logo-Psios"></a>
+                    <p><strong>Endereço:</strong><br>
+                        Av. Tancredo Neves, 2421<br />
+                        Caminho das Árvores, sala 208<br />
+                        Salvador - BA - Brasil, 41820-560 <br /><br />
+                        <strong>Fone:</strong> +55 71 98383 1666<br />
+                        <strong>Email:</strong> inpsios@gmail.com<br />
+                    </p>
+                </div>
+                <div class="footer-blog"></div>
+                <div class="footer-social">
+                    <a href="#"><i class="icofont-facebook"></i></a>
+                    <a href="#"><i class="icofont-instagram"></i></a>
+                    <a href="#"><i class="icofont-twitter"></i></a>
+                    <a href="#"><i class="icofont-youtube"></i></a>
+                    <a href="#"><i class="icofont-brand-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="copyright cl-white">
+                    © Copyright <strong><span
+                            class="cl-lightorange">Psios</span></strong>. All
+                    Rights
+                    Reserved
+                </div>
+                <div class="credits cl-white">
+                    Designed by<a class="cl-lightorange"
+                        href="https://m&m.com/">M&M</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="assets/js/caroussel.js"></script>
+
+</html>
