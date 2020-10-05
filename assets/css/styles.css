@@ -191,11 +191,20 @@ li {
     padding: 0 10px;
 }
 
+.btn {
+    color: #ffa45e;
+}
+
+.btn:hover {
+    color: #ffffff;
+    text-shadow: none !important;
+}
+
 .btn-primary {
     text-decoration: none;
     border: 2px solid #ffa45e;
     border-radius: 50em;
-    color: #fff;
+    color: #fff !important;
     background: #ffa45e;
     padding: 15px 30px;
     /*text-transform: uppercase;*/
@@ -542,6 +551,10 @@ li {
     color: black !important;
 }
 
+#btnAgendamento {
+    color: #ffffff !important;
+}
+
 .shrink .menu a:hover,
 .shrink .menu .active {
     color: #ffa45e !important;
@@ -681,6 +694,11 @@ li {
     color: #818181;
     display: block;
     transition: 0.3s;
+}
+
+.overlay-nav a:last-child {
+    color: #ffa45e;
+
 }
 
 .overlay-nav a:hover,
