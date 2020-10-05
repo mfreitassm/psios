@@ -8,6 +8,13 @@ $(document).on("scroll", function () {
     //console.log($(document).scrollTop());
 });
 
+function openNav() {
+    document.getElementById("mobileNav").style.width = "100%";
+  }
+
+  function closeNav() {
+    document.getElementById("mobileNav").style.width = "0%";
+  }
 
 filterSelection("all")
 
