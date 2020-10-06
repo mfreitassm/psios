@@ -51,26 +51,7 @@ function gRemoveClass(element, name) {
     element.className = arr1.join(" ");
 }
 
-
-
-function test(pageName) {
-    const isNotService = true;
-    const idName = pageName;
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
-    console.log(page);
-
-    if (page != "services.html") {
-        console.log(page);
-        window.location = 'services.html';
-        // window.onload = test2("service1");
-        // setTimeout(test2("service1"), 6000);
-        window.onload = function () {
-            document.getElementById('service2').style.display = "block";
-        };
-    }
-}
-
+/*
 function openPage(pageName, elmnt) {
     var i, tabcontent, tablinks;
     console.log('here!!!');
@@ -89,7 +70,7 @@ function openPage(pageName, elmnt) {
 
     // elmnt.style.backgroundColor = color;
     document.body.scrollTop = 0;
-}
+}*/
 
 // Get the element with id="defaultOpen" and click on it
 //document.getElementById("defaultOpen").;
@@ -99,14 +80,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
     document.body.scrollTop = 0;
 
     // Add active class to the current button
-    var filterContainer = document.getElementById("filter");
+    const filterContainer = document.getElementById("filter");
     if (!!filterContainer) {
         var btns = filterContainer.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function () {
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace("active", " ");
-                this.className += " active";
+                const currentActiveFilter = filterContainer.getElementsByClassName("active");
+                currentActiveFilter[0].classList.remove('active')
+                this.classList.add("active");
             });
         }
     }
