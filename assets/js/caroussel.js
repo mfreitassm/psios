@@ -1,4 +1,4 @@
-/*var slideIndex = 0;
+var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -17,22 +17,22 @@ function showSlides() {
   }
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
-  setTimeout(showSlides, 6000); // Change image every 2 seconds
-}*/
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
 
-var slideIndex = 1;
-showSlides(slideIndex);
+//var slideIndex = 1;
+//showSlides(slideIndex);
 // Next/previous controls
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlidesControl(slideIndex += n);
 }
 
 // Thumbnail image controls
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+    showSlidesControl(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlidesControl(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("dot");
