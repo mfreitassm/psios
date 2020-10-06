@@ -3969,6 +3969,14 @@ footer {
         width: 260px;
     }
 
+    #myVideo {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
     /*--------------PgAbout---------------*/
     .pg-about .about img {
         width: 250px;
