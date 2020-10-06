@@ -3684,6 +3684,7 @@ footer {
     .slide3 .text p {
         font-size: 12px;
         padding: 0;
+        width: 90%;
     }
 
     .hero {
@@ -3694,11 +3695,11 @@ footer {
     .base {
         flex-direction: column;
         place-items: center;
-        padding: 2rem;
+        padding: 0 2rem;
     }
 
     .site_wrap main .base figure {
-        width: 200px;
+        width: 150px;
     }
 
     main {
@@ -3706,7 +3707,7 @@ footer {
     }
 
     main .base img {
-        width: 200px;
+        width: 150px;
         height: auto;
         bottom: 0;
         filter: none;
