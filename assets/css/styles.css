@@ -97,7 +97,7 @@ figure {
     margin: 0;
     padding: 0;
     max-width: 950px;
-    place-self: center;
+    /* place-self: center;*/
 }
 
 ul {
@@ -1244,7 +1244,7 @@ section.services {
 }
 
 .services-list-item svg {
-    width: 50px;
+    width: 60px;
     fill: #fff;
     filter: drop-shadow(0px 0px 5px black);
 }
@@ -1726,7 +1726,7 @@ section.services {
 .hero {
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/background-page.png");*/
     /* background-image: url("../img/background-page.png"); */
-    height: 50vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1945,6 +1945,14 @@ section.services {
 }
 
 /********** Page Service ********------------------*/
+#mainSolution{
+    grid-template-areas:
+        "header header header header header header"
+        "services services services services services services"
+        "message-contact message-contact message-contact message-contact message-contact message-contact"
+        "footer footer footer footer footer footer";
+}
+
 .pg-service {
     grid-template-rows:
         repeat(4, 1fr);
@@ -3356,7 +3364,7 @@ footer {
     }
 
     .hero {
-        height: 30vh;
+        height: 50vh;
     }
 
     /*-----------------Header----------------------*/
@@ -3942,7 +3950,7 @@ footer {
     }
 
     .hero {
-        height: 40vh;
+        height: 50vh;
     }
 
     /*-----------------About----------------------*/
