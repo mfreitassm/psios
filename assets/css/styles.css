@@ -3631,7 +3631,10 @@ footer {
         height: 100px;
         padding-top: 10px;
     }
-
+    /*-------------Project------*/
+    .project-text a {
+        width: 70%;
+    }
     /*-------------Pg About------*/
     .pg-about .about,
     .pg-about .content-team {
