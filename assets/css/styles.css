@@ -991,6 +991,10 @@ main {
 .about {
     display: flex;
     display: -webkit-flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -1019,11 +1023,19 @@ main .base img {
 .about-content {
     display: flex;
     display: -webkit-flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
 }
 
 .about-text {
     display: flex;
     display: -webkit-flex;
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
     flex-direction: column;
     font-size: 14px;
     align-items: center;
@@ -3631,7 +3643,7 @@ footer {
         height: 100px;
         padding-top: 10px;
     }
-    /*-------------Project------*/
+    /*-------------Projects------*/
     .project-text a {
         width: 70%;
     }
