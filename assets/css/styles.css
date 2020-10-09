@@ -811,7 +811,7 @@ li {
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    /* width: 60%; */
     position: absolute;
     top: 30%;
     left: 20%;
@@ -852,8 +852,9 @@ li {
     position: relative;
     bottom: 0;
     left: 0;
-    width: 70%;
+    /* width: 90%; */
     font-size: 22px;
+    text-align: left;
 }
 
 .text-slide1 h2 {
@@ -863,7 +864,7 @@ li {
 
 .text-slide2 {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 20%;
     /* right: 0; */
     align-items: center;
@@ -873,8 +874,8 @@ li {
 
 .text-slide2 h2 {
     color: white;
-    font-size: 46px;
-    padding-bottom: 30px;
+    /* font-size: 46px; */
+    padding-bottom: 20px;
     line-height: 46px;
 }
 
@@ -893,13 +894,14 @@ li {
     /* text-align: left; */
     line-height: 2.5rem;
     padding-left: 4.5rem;
+    text-align: left;
 }
 
 .text-slide3 p {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     padding-left: 35px;
-    width: 70%;
+    width: 73%;
 }
 
 
@@ -3980,6 +3982,7 @@ footer {
         font-size: 0.7em;
         line-height: 1.2em;
         text-align: center;
+        width: 80%;
     }
 
     #myVideo {
@@ -4008,7 +4011,7 @@ footer {
 
     .text-slide3 {
         position: absolute;
-        top: 66%;
+        top: 76%;
         left: 5%;
         width: 90%;
         place-items: center;
@@ -4024,6 +4027,10 @@ footer {
         padding: 0;
         width: 90%;
         line-height: 1em;
+    }
+
+    .text-slide3 p {
+        display: none;
     }
 
     .slide3 .text p {
@@ -4581,7 +4588,7 @@ footer {
 
     /*--------------home---------------*/
     .text-slide3 {
-        top: 62%;
+        top: 72%;
     }
 
     .about-text a {
