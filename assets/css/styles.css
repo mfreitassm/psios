@@ -62,7 +62,7 @@ p {
     color: black;
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
-    text-align: justify;
+    text-align: left;
 }
 
 a {
@@ -72,19 +72,20 @@ a {
     font-family: "Open Sans", sans-serif;
     font-size: 1rem;
     color: #000000;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
     padding: 19px 10px 10px 10px;
+    background: #dad6d605;
 
 }
 
-span {
+/*span {
     font-weight: bold;
     color: #543884
-}
+}*/
 
 img {
     /*border-radius: 15px 50px;*/
@@ -190,6 +191,11 @@ li {
     font-weight: 700;
 }
 
+.detach {
+    font-weight: bold;
+    color: #543884
+}
+
 .padding10 {
     padding: 0 10px;
 }
@@ -210,21 +216,11 @@ li {
     color: #fff !important;
     background: #ffa45e;
     padding: 15px 30px;
-    /*text-transform: uppercase;*/
     font-weight: bold;
     font-size: 14px;
-    /* box-shadow: 3px 3px 10px darkgrey; */
-    /* width: 185px; */
-    /* height: 40px; */
-    /* line-height: 40px; */
     border-radius: 20px;
     display: block;
     box-shadow: 0 0 5px rgba(0, 0, 0, .1);
-    /* background: #26d0ce; */
-    /* color: #fff; */
-    /* font-size: 14px; */
-    /* font-weight: 500; */
-    /* font-family: Poppins,sans-serif; */
     text-align: center;
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -406,7 +402,7 @@ li {
     padding: 3em 0;
 }
 
-.center {
+.text-center {
     text-align: center;
 }
 
@@ -414,7 +410,7 @@ li {
     text-align: -webkit-center;
 }
 
-.justify {
+.text-justify {
     text-align: justify;
 }
 
@@ -1357,9 +1353,10 @@ section.services {
     flex-direction: column;
     align-items: center;
     padding-top: 70px;
+    font-family: "Open Sans", sans-serif;
 }
 
-.parallax-item p {
+.parallax-item h4 {
     color: white;
     padding-top: 50px;
     text-align: center;
@@ -2319,6 +2316,7 @@ section.services {
 
 .pg-service .content h4 {
     color: black;
+    /*text-align: left;*/
     /* padding-bottom: 10px; */
 }
 
@@ -2351,7 +2349,7 @@ section.services {
 }
 
 .pg-service #service1 .content .div-text {
-    max-width: 60%;
+    max-width: 50%;
 }
 
 .pg-service #service4 .d-grid,
@@ -3020,7 +3018,7 @@ footer {
         height: 200px;
     }
 
-    .parallax-item p {
+    .parallax-item h4 {
         font-size: 2rem;
     }
 
@@ -3590,7 +3588,7 @@ footer {
     .message .content-message .about-content {
         bottom: 0;
         left: 0;
-        width: 82%;
+        width: 350px;
         min-height: 300px;
         background-color: transparent;
     }
@@ -3609,7 +3607,7 @@ footer {
         min-height: auto;
     }
 
-    .parallax-item p {
+    .parallax-item h4 {
         font-size: 1.1rem;
     }
 
@@ -3631,10 +3629,12 @@ footer {
         height: 100px;
         padding-top: 10px;
     }
+
     /*-------------Projects------*/
     .project-text a {
         width: 70%;
     }
+
     /*-------------Pg About------*/
     .pg-about .about,
     .pg-about .content-team {
@@ -3867,7 +3867,7 @@ footer {
         position: relative;
         bottom: 0;
         top: 0;
-        font-size: 1.5em;
+        font-size: 2em;
         line-height: 1em;
     }
 
@@ -4109,7 +4109,7 @@ footer {
         background-position: top right;
     }
 
-    .parallax-item p {
+    .parallax-item h4 {
         font-size: 1.1rem;
     }
 
@@ -4140,6 +4140,7 @@ footer {
     .project-content {
         flex-direction: column;
     }
+
     .project-content h2 {
         font-size: 26px;
     }
@@ -4415,16 +4416,16 @@ footer {
     .form-group {
         display: flex;
         flex-direction: column;
-        width: 300px;
+        width: 350px;
         place-items: center;
     }
 
     .form-control {
-        width: 300px;
+        width: 350px;
     }
 
     .form-group textarea {
-        width: 300px;
+        width: 350px;
         height: 200px;
         padding: 5px 12px;
     }
@@ -4586,6 +4587,11 @@ footer {
         width: 80%;
     }
 
+    .message .content-message .about-content {
+        width: 300px;
+
+    }
+
     .content-message img {
         width: 300px;
         border-radius: 0px;
@@ -4613,19 +4619,24 @@ footer {
     }
 
     /*----------------------Pg-Contact-----*/
+    .contact-details-form {
+        margin: 0;
+    }
+
     .form-group {
-        width: 225px;
+        width: 280px;
     }
 
     .form-control {
-        width: 225px;
+        width: 280px;
     }
 
     .form-group textarea {
-        width: 225px;
+        width: 280px;
         height: 200px;
     }
 
+    /*----------------------Pg-service-----*/
     .pg-service #service4 .d-grid img,
     .pg-service #service2 .d-grid img {
         width: 225px;
