@@ -6,8 +6,11 @@
     <title>Psios</title>
     <link rel="shortcut icon" href="assets/img/logo-simbolo2.svg"
         type="image/x-icon  ">
+    <link rel="stylesheet" href="assets/css/vendor.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-
     <!--Fonts-->
     <link
         href="https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@400;700&family=Poppins:wght@400;700&family=Tienne:wght@400;700&display=swap"
@@ -95,24 +98,26 @@
                                 type="video/mp4">
                         </video>
                         <div class="text">
-                            <h1>Deixe sua vida mais leve.</h1>
-                            <h2 class="text-slide1 cl-white">
+                            <h1 class="animate__animated animate__fadeInUp animate__slow ">
+                                Deixe sua vida mais leve.</h1>
+                            <h2 class="text-slide1 cl-white animate__animated animate__fadeInDown animate__delay-2s">
                                 Conquiste seu bem-estar emocional com o apoio da
                                 Psios.
                             </h2>
                         </div>
-                        <div class="animation" id="anime">
+                        <div data-aos="fade-in" data-aos-delay="1000"
+                            class="animation" id="anime">
                         </div>
                     </div>
 
                     <div class="mySlides slide2 fade">
 
-                        <div class="text text-slide2">
-                            <h2>
+                        <div class="text text-slide2 ">
+                            <h2 class="animate__animated animate__fadeInUp">
                                 Viva melhor e em paz com suas emoções
                             </h2>
                             <a href="about.html" type="button"
-                                class="btn-outline-white">Saiba
+                                class="btn-outline-white animate__animated animate__backInUp">Saiba
                                 Como</a>
                         </div>
                     </div>
@@ -121,12 +126,12 @@
 
                         <div class="text text-slide3">
                             <img src="assets/img/logo-capa2.svg "
-                                class="d-inline-block align-top"
+                                class="d-inline-block align-top animate__animated animate__fadeInUp"
                                 alt="logo Psios" />
-                            <h2 class="cl-white">De bem com as suas
+                            <h2 class="cl-white animate__animated animate__fadeInUp">De bem com as suas
                                 emoções.
                             </h2>
-                            <p class="cl-white"> E fique de bem com você mesmo,
+                            <p class="cl-white animate__animated animate__fadeInUp"> E fique de bem com você mesmo,
                                 com
                                 Psios
                                 você tem sugestões
@@ -154,13 +159,17 @@
                 <figure class="order1">
                     <!--<img class="img-border" src="assets/img/hannah-busing-Zyx1bK9mqmA-unsplash (1).jpg"
                         alt="hands" />-->
-                    <img src="assets/img/logo-capa2.svg" alt="logo Psios"
+                    <img data-aos="fade-down-right" data-aos-duration="2000"
+                        data-aos-delay="400" class=""
+                        src="assets/img/logo-capa2.svg" alt="logo Psios"
                         width="200px" height="250px" />
                 </figure>
                 <div class="about-content webkit-center order2">
-                    <div class="about-text ">
-                        <h2 class="title-content">Quem Somos</h2>
-                        <p class="left-right-padding">
+                    <div data-aos="zoom-in-down" data-aos-duration="1000"
+                        data-aos-delay="400" class="about-text ">
+                        <h2 data-aos="fade-up" class="title-content">Quem Somos
+                        </h2>
+                        <p class="left-right-padding fade-in">
                             <span class=""> Somos um grupo de
                                 psicólogos, amigos, unidos em
                                 um
@@ -200,9 +209,10 @@
         </main>
         <section class="services">
             <div class="services-content webkit-center">
-                <h2 class="title-content">Soluções</h2>
+                <h2 data-aos="fade-up" class="title-content">Soluções</h2>
                 <div class="services-list">
-                    <div class="services-list-item">
+                    <div data-aos="zoom-in-up" data-aos-duration="500"
+                        data-aos-delay="400" class="services-list-item">
                         <div class="item-icon">
                             <div class="box-bg" id="box-service1">
                                 <div class="box-bg-text">
@@ -244,7 +254,8 @@
                             </p>
                         </div>
                     </div>
-                    <div class="services-list-item">
+                    <div data-aos="zoom-in-up" data-aos-duration="500"
+                        data-aos-delay="500" class="services-list-item">
                         <div class="item-icon">
                             <div class="box-bg" id="box-service2">
                                 <div class="box-bg-text">
@@ -253,10 +264,12 @@
                                         psicoterapia por meio de TICs –
                                         tecnologias da informação e comunicação
                                         devidamente regulamentada pela resolução
-                                        Conselho federal de psicologia. <!--para
+                                        Conselho federal de psicologia.
+                                        <!--para
                                         facilitar o acesso das pessoas ao
                                         atendimento e a promoção de saúde
-                                        mental.--></p>
+                                        mental.-->
+                                    </p>
                                     <a class="cl-lightpurple"
                                         href="psicoterapia.html">
                                         Veja mais
@@ -292,7 +305,8 @@
                             <p class="service-title">Psicoterapia Online</p>
                         </div>
                     </div>
-                    <div class="services-list-item">
+                    <div data-aos="zoom-in-up" data-aos-duration="500"
+                        data-aos-delay="600" class="services-list-item">
                         <div class="item-icon">
                             <div class="box-bg" id="box-service3">
                                 <div class="box-bg-text">
@@ -388,7 +402,8 @@
                                 Emoções</p>
                         </div>
                     </div>
-                    <div class="services-list-item">
+                    <div data-aos="zoom-in-up" data-aos-duration="500"
+                        data-aos-delay="400" class="services-list-item">
                         <div class="item-icon">
                             <div class="box-bg" id="box-service4">
                                 <div class="box-bg-text">
@@ -444,7 +459,8 @@
                                 Emoções</p>
                         </div>
                     </div>
-                    <div class="services-list-item">
+                    <div data-aos="zoom-in-up" data-aos-duration="500"
+                        data-aos-delay="500" class="services-list-item">
                         <div class="item-icon">
                             <div class="box-bg" id="box-service5">
                                 <div class="box-bg-text">
@@ -490,7 +506,8 @@
                             <p class="service-title">Tome seu Espaço</p>
                         </div>
                     </div>
-                    <div class="services-list-item">
+                    <div data-aos="zoom-in-up" data-aos-duration="500"
+                        data-aos-delay="600" class="services-list-item">
                         <div class="item-icon">
                             <div class="box-bg" id="box-service6">
                                 <div class="box-bg-text">
@@ -534,20 +551,24 @@
         </section>
         <section class="parallax">
             <div class="parallax-item webkit-center">
-                <h2 class="title-content cl-white">Para quem é o nosso trabalho:
+                <h2 data-aos="fade-up" class="title-content cl-white">Para quem
+                    é o nosso trabalho:
                 </h2>
                 <div class="transparent-box">
-                    <div class="transparent-box-item">
+                    <div data-aos="flip-left" data-aos-duration="1000"
+                        data-aos-delay="400" class="transparent-box-item">
                         <img src="assets/img/undraw_feeling_happy_jymo.svg"
                             alt="ilustração para você.">
                         <h3>Para você!</h3>
                     </div>
-                    <div class="transparent-box-item">
+                    <div data-aos="flip-right" data-aos-duration="1000"
+                        data-aos-delay="500" class="transparent-box-item">
                         <img src="assets/img/undraw_Connecting_Teams_8ntu.svg"
                             alt="ilustração para Familia.">
                         <h3>Sua família!</h3>
                     </div>
-                    <div class="transparent-box-item">
+                    <div data-aos="flip-right" data-aos-duration="1000"
+                        data-aos-delay="600" class="transparent-box-item">
                         <img src="assets/img/undraw_project_team_lc5a.svg"
                             alt="ilustração Empresas e Colaboradores">
                         <h3>Empresa e <br>colaboradores!</h3>
@@ -564,7 +585,8 @@
         </section>
         <section class="project">
             <div class="project-content webkit-center">
-                <div class="project-text">
+                <div data-aos="fade-up" data-aos-duration="600"
+                    data-aos-delay="400" class="project-text">
                     <h2 class="title-content order1 cl-black">Não brigue com as
                         suas
                         emoções! <br>Escolha viver com mais leveza! <br>
@@ -585,13 +607,16 @@
         <section class="message">
             <div class="content-message">
                 <figure class="order2">
-                    <img class="img-border"
+                    <img data-aos="fade-down" data-aos-duration="2000"
+                        data-aos-delay="400" class="img-border"
                         src="assets/img/riccardo-pelati-_-Cg7vTw3bs-unsplash.jpg"
                         alt="espaço Psios" />
                 </figure>
                 <div class="about webkit-center order1">
-                    <h2 class="title-content cl-white">Nosso Espaço</h2>
-                    <div class="about-content">
+                    <h2 data-aos="fade-up" class="title-content cl-white">Nosso
+                        Espaço</h2>
+                    <div data-aos="fade-up-right" data-aos-duration="2000"
+                        data-aos-delay="400" class="about-content">
                         <div
                             class="about-text order1 text-justify text-padding">
                             <p class="cl-white text-padding">Fornecemos a você
@@ -648,6 +673,12 @@
     <script src="assets/js/caroussel.js"></script>
     <script src="assets/js/bg-animations.js"></script>
     <script src="assets/js/script.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js">
+    </script>-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
