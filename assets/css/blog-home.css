@@ -1,0 +1,116 @@
+/*!
+ * Start Bootstrap - Blog Home (https://startbootstrap.com/templates/blog-home)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-blog-home/blob/master/LICENSE)
+ */
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #000 !important;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+p {
+    margin-top: 1rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+video {
+    min-height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#header .navbar {
+    padding: 20px 15px;
+}
+
+
+.btn-primary:hover {
+    /* color: #fff; */
+    background-color: #ffa45e;
+    border: 2px solid #ffa45e;
+    border-radius: 0;
+}
+
+.btn-secondary {
+    /*border: none !important;*/
+    border-radius: 5px !important;
+    padding: .35em 0.8em !important;
+    box-shadow: none;
+}
+
+.post img {
+    max-height: 30%;
+    object-position: bottom bottom;
+
+}
+
+.img-fluid {
+    width: 100% !important;
+}
+
+.col-lg-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.form-group textarea {
+    /* border-radius: 50px; */
+    width: 650px;
+}
+
+.form-group a {
+    margin: 0 auto;
+}
+
+.title-content {
+    color: #000;
+}
+
+
+.card-header {
+    background-color: floralwhite;
+}
+
+.card {
+    margin-top: 1.5rem;
+}
+
+.card-body {
+    justify-items: center;
+
+}
+
+.card-body a {
+    width: 20%;
+    margin: 1.5rem auto;
+    padding: 5px 15px;
+}
+
+.card-footer {
+    background-color: #fffaf0;
+
+}
+
+.post blockquote p{
+   padding-bottom: 1em;
+}

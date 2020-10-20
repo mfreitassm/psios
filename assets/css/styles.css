@@ -237,20 +237,20 @@ li {
 
 .btn-secondary {
     text-decoration: none;
-    border: 2px solid #593d82;
-    border-radius: 50em;
+    font-size: 14px;
+    border: 2px solid #9a77cf;
+    border-radius: 20px;
+    font-weight: bold;
     color: #ffffff;
-    background-color: #593d82;
+    background-color: #9a77cf;
     padding: 15px 30px;
-    text-transform: uppercase;
     font-weight: bold;
     box-shadow: 3px 3px 10px darkgrey;
 }
 
 .btn-secondary:hover {
-    color: #593d82;
-    background-color: #ffffff;
-    border: 2px solid #593d82;
+    border: 2px solid #9a77cf;
+    border-radius: 0;
 }
 
 .btn-outline-orange {
@@ -280,7 +280,7 @@ li {
     background-color: transparent;
     padding: 15px 30px;
     text-transform: capitalize;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     /* font-size: 0.85em; */
     display: block;
@@ -302,6 +302,10 @@ li {
     border-radius: 0;
 }
 
+.box-btn {
+    display: flex;
+    gap: 1rem;
+}
 
 .container-title {
     font-family: 'Courgette', cursive;
@@ -310,7 +314,7 @@ li {
     text-align: center;
 }
 
-.container {
+.containerv1 {
 
     display: flex;
 
@@ -499,9 +503,9 @@ li {
 
     grid-template-areas:
         "header header header header header header"
-        "main main main main main main"
-        "message message message message message message"
         "services services services services services services"
+        "message message message message message message"
+        "main main main main main main"
         "parallax parallax  parallax  parallax  parallax parallax "
         "project project project project project project"
         "footer footer footer footer footer footer";
@@ -522,11 +526,11 @@ li {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 10vh;
+    /*max-height: 10vh;*/
     min-height: 10vh;
     min-width: 100%;
     z-index: 50;
-    padding: 20px 15px;
+    padding: 10px 15px;
     background-color: #ffffff;
 }
 
@@ -787,7 +791,7 @@ li {
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    z-index: 5;
+    z-index: 45;
 }
 
 .next-prev-video {
@@ -838,16 +842,16 @@ li {
 
 .slide1 {
     /*background: linear-gradient(#9a77cf52, #593d82b3), url(../img/slide/image-from-rawpixel-id-2310330-original-min.jpg);*/
-    background: linear-gradient(#9a77cf52, #593d82b3), url(../img/slide/image-from-rawpixel-id-2310330-original-min.jpg);
+    background: linear-gradient(#9a77cf52, #593d8245), url(../img/slide/image-from-rawpixel-id-2310330-original-min.jpg);
 }
 
 .slide2 {
-    background: linear-gradient(#9a77cf52, #593d82b3), url(../img/slide/mulher-pc.jpg);
+    background: linear-gradient(#593d8269, #9a77cf38, #593d8287), url(../img/slide/mulher-pc.jpg);
 
 }
 
 .slide3 {
-    background: linear-gradient(#9a77cf52, #593d82b3), url(../img/slide/frank-busch-g7uPG8w1XV8-unsplash.jpg);
+    background: linear-gradient(#9a77cf52, #593d8245), url(../img/slide/frank-busch-g7uPG8w1XV8-unsplash.jpg);
     background-position: left top;
 }
 
@@ -864,6 +868,7 @@ li {
 .text-slide1 h2 {
     position: relative;
     bottom: 0;
+    font-weight: 400;
 }
 
 @keyframes fadein {
@@ -907,13 +912,10 @@ li {
     /*animation: slidein 3s;*/
 }
 
-.text-slide2 a {
-    /*animation: fadein 6s ease-out;*/
-}
 
 .text-slide3 {
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: -7%;
     width: 60%;
     /* align-items: center; */
@@ -925,21 +927,23 @@ li {
     /* width: 70%; */
     /* text-align: left; */
     line-height: 2.5rem;
-    padding-left: 4.5rem;
+    /* padding-left: 4.5rem;*/
     text-align: left;
+    margin-left: 4rem;
     /*animation: 1s slidein;*/
 }
 
-.text-slide3 p {
-    font-size: 16px;
+.text-slide3 h3 {
+    font-family: 'Tienne', serif;
+    font-weight: 400;
     text-align: left;
-    padding-left: 35px;
-    width: 73%;
+    padding: 0;
+    margin-bottom: 1.5rem;
     /*animation: 6s ease-out fadein;*/
 }
 
 .text-slide3 img {
-
+    margin-bottom: 1.5rem;
 }
 
 
@@ -1610,18 +1614,19 @@ section.services {
 }
 
 .project-text {
-    width: 40%;
+    width: 50%;
     margin-left: 2em;
 }
 
 .project-text a {
-    width: 50%;
+    width: 45%;
 }
 
 .project-content h2 {
     flex: none;
-    font-weight: 400;
-    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
 }
 
 .animation div {
@@ -1817,9 +1822,10 @@ section.services {
     display: flex;
     display: -webkit-flex;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 80vh;
     /* WIDTH: 50%; */
     /* padding-top: 3rem; */
+
 }
 
 .content-message img {
@@ -1831,10 +1837,22 @@ section.services {
     top: 10%;
 }
 
+.content-message video {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    right: 5%;
+    order: 2;
+    place-self: center;
+    filter: saturate(0.5);
+
+}
+
 .message .content-message .about-content {
     position: relative;
     bottom: 10%;
-    left: 30%;
+    left: 10%;
     width: 100%;
     height: 60%;
     background-color: #543884c2;
@@ -2435,7 +2453,7 @@ section.services {
     width: 100%;
 }
 
-.pg-service #service6 .container {
+.pg-service #service6 .containerv1 {
     padding: 2vmax;
     margin: 2rem;
 }
@@ -2838,7 +2856,7 @@ footer {
 }
 
 .footer-content {
-    min-height: 50%;
+    min-height: 80%;
     display: flex;
     /*flex-direction: column;*/
     justify-content: space-between;
@@ -2850,12 +2868,14 @@ footer {
 .footer-info {
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .footer-info p {
     text-align: left;
     padding-left: 20px;
     color: #fff;
+    margin-top: 2rem;
 }
 
 .footer-copyright {
@@ -2937,6 +2957,11 @@ footer {
         font-size: 1.2em;
     }
 
+    .btn-secondary {
+        font-size: 1.2em;
+        padding: 20px 40px;
+    }
+
     .img-horizontal {
         width: 600px;
         height: auto;
@@ -2979,12 +3004,20 @@ footer {
 
 
     .text-slide2 {
-        top: 70%;
+        top: 65%;
+        left: 0;
+        right: 28%;
     }
 
     .text-slide2 h2 {
         font-size: 3rem;
 
+    }
+
+    .text-slide3 {
+        left: -18%;
+        top: 10%;
+        right: 0;
     }
 
     .text-slide3 p {
@@ -3023,6 +3056,12 @@ footer {
     /*--------------NossoEspaco-------------*/
     .message {
         min-height: 90vh;
+    }
+
+    .content-message video {
+        width: 800px;
+        height: 600px;
+
     }
 
     .message .content-message .about-content {
@@ -3313,7 +3352,7 @@ footer {
         width: 350px;
     }
 
-    /*-----------------NossoEspaco-----------*/
+    /*-----------------NossoOlhar-----------*/
     .message {
         min-height: auto;
     }
@@ -3321,6 +3360,13 @@ footer {
     .message .content-message .about-content {
         bottom: 10%;
     }
+
+    .content-message video {
+        width: 500px;
+        height: 350px;
+
+    }
+
 
     /*-----------------Paralax----------------------*/
     .parallax {
@@ -3602,7 +3648,7 @@ footer {
 
     }
 
-    /*-----------------NossoEspaco----------------------*/
+    /*-----------------Nossoolhar----------------------*/
     .content-message {
         min-height: 100%;
         flex-direction: column;
@@ -3618,10 +3664,17 @@ footer {
     }
 
     .content-message img {
-        width: 630px;
-        height: 250px;
+        width: 500px;
+        height: 300px;
         top: 0;
         left: 0;
+    }
+
+    .content-message video {
+        width: 500px;
+        height: 300px;
+        left: 0;
+        padding: 2em 0 5em 0;
     }
 
     .content-message .about {
@@ -3632,7 +3685,7 @@ footer {
     .message .content-message .about-content {
         bottom: 0;
         left: 0;
-        width: 350px;
+        width: 500px;
         min-height: 300px;
         background-color: transparent;
     }
@@ -3814,7 +3867,7 @@ footer {
         font-size: 28px;
     }
 
-    .container {
+    .containerv1 {
         margin: 2em 0 0 0;
     }
 
@@ -4107,7 +4160,7 @@ footer {
 
     }
 
-    /*-----------------NossoEspaco----------------------*/
+    /*-----------------Nossoolhar----------------------*/
     .content-message {
         min-height: 100%;
         flex-direction: column;
@@ -4128,6 +4181,13 @@ footer {
         height: 250px;
         top: 0;
         left: 0;
+    }
+
+    .content-message video {
+        width: 350px;
+        height: 250px;
+        left: 0;
+
     }
 
     .content-message .about {
@@ -4497,7 +4557,7 @@ footer {
         font-size: 28px;
     }
 
-    .container {
+    .containerv1 {
         margin: 2em 0 0 0;
     }
 
@@ -4575,7 +4635,7 @@ footer {
         height: auto;
     }
 
-    .pg-service #service6 .container {
+    .pg-service #service6 .containerv1 {
         padding: 0;
         margin: 2em 0 0 0;
     }
@@ -4646,6 +4706,13 @@ footer {
         border-radius: 0px;
     }
 
+    .content-message video {
+        width: 300px;
+        height: 200px;
+        left: 0;
+
+    }
+
     #myVideo {
         display: none;
     }
@@ -4653,6 +4720,7 @@ footer {
     .overlay {
         display: none;
     }
+
 
     /*--------------PgAbout---------------*/
     .pg-about .about img {
